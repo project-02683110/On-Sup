@@ -63,8 +63,12 @@ function Change() {
         btn.innerText = "したよ…";
         cmd.innerText = "「" + parts[a] + "」を" + b + "回" + how[c] + "…";
         if (i==1) {Mail("始めた(" + m + ")");};
-        window.setTimeout(function(){
-            Report(parts[a] + b + how[c]);
+            window.onunload = function(){
+                setStorage();
+                Mail("離れた");
+            };
+            window.setTimeout(function(){
+                Report(parts[a] + b + how[c]);
         }, 1000);
     } else {
         setStorage();
