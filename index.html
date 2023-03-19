@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>App for your Mustarbation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    </head>
+<body>
+<header>
+    <div></div><h1>オナニーマシーン</h1></div>
+    <hr>
+    <div><button class="scb" onclick="pop('htu')">HOW TO USE</button> | <button class="scb" onclick="pop('cl')">CHANGE LOG</button> | <button class="scb" onclick="pop('tos')">TERMS OF SERVICE</button> | <button class="scb" onclick="pop('cu')">CONTACT</button></div>
+</header>
+<div class="fade unv" id="fade"></div>
+<button class="close unv" id="close" onclick="cls()">&#10006;</button>
+<div class="pop-up unv" id="err">
+    <div class="title">- 404 Not Found -</div>
+    <p>
+        ページが存在しません。
+    </p>
+</div>
+<div class="pop-up unv" id="htu">
+    <div class="title">&hearts; HOW TO USE &hearts;</div>
+    <p>
+        1: まず、下着を脱いでベッドに寝ます。<br>
+        2: 次に、「始める…」をクリックします。<br>
+        3: 画面上の指令に従って身体を弄ります。<br>
+        4: したら「したよ…」をクリックします。<br>
+        5: いかずに指令をコンプリートします。<br>
+        6: その後は弄るのを我慢して寝ます。<br>
+        <b>※1日1回しかできません。</b>1回すると、次に開いても別の画面が表示されます。<br>
+        <b style="color: red;">※途中でイってしまった場合、正直に「絶頂した…」をクリックしてください。</b>
+    </p>
+</div>
+<div class="pop-up unv" id="cl">
+    <div class="title">&hearts; CHANGE LOG &hearts;</div>
+    <p>
+        1.1.1 - リリース<br>
+        1.2.1 - UIを改善
+    </p>
+</div>
+<div class="pop-up unv" id="tos">
+    <div class="title">&hearts; TERMS OF SERVICE &hearts;</div>
+    <p>
+        [第1条] 本サービスはlocalStrageを利用します。<b style="color: red;">シークレットモードは利用しないでください。</b><br>
+        [第2条] 本サービスの利用情報は、内部に記録され、システム改善に利用され、この目的の他に利用されることはありません。<br>
+        [第3条] 本サービスは管理者に許可された者のみが利用できます。<br>
+        [第4条] 本サービス及び規約は、予告なしに変更することがあります。
+    </p>
+</div>
+<div class="pop-up unv" id="cu">
+    <div class="title">&hearts; CONTACT &hearts;</div>
+    <p>
+        <textarea cols="40" rows="10" id="txa" placeholder="こちらにあなたのご意見/ご感想/フィードバックをお書きください。「!?/:;&+=#」や半角スペース等の記号は用いることはできません。" style="text-align: left; resize: none;"></textarea>
+        <button onclick="Contact()">作成者に送信</button>
+        <button onclick="FieldClear()">クリア</button>
+        <button onclick="cls()">閉じる</button>
+    </p>
+</div>
+<article>
+    <div class="box"><div class="box-title">指令</div><span id="cmd">オナニーを始めましょう…</span></div>
+    <button class="button" id="btn" onclick="Change()">始める…</button>
+    <br>
+    <button class="button" id="rep" onclick="OrgRep()" style="visibility: hidden;">絶頂した…</button>
+    <br>
+</article>
+<footer>
+    <div style="text-align: right; padding-right: 40px;">Version <span id="prv">1.2.1</span></div>
+</footer>
+</body>
+</html>
