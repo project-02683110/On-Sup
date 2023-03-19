@@ -55,6 +55,11 @@
 	color: #fff;
 	background: #666666;
 }
+.lis {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+}
 .scb {
     color: #666;
     background-color: #66666600;
@@ -71,10 +76,12 @@ button {
 }
 .close {
 	position: absolute;
+    transform: translate(-50%, -50%);
     padding: 8px;
     z-index: 256;
-	top: 80px;
-	right: 80px;
+	top: 16%;
+    left: auto;
+    right: auto;
 	font-size: 40px;
     line-height: 32px;
     color: #666666;
@@ -118,7 +125,7 @@ hr::after {
     background: #00000044;
 }
 .pop-up {
-    width: 400px;
+    width: 360px;
     height: 300px;
     position: fixed;
     z-index: 255;
@@ -127,10 +134,11 @@ hr::after {
     left: 0;
     right: 0;
     margin: auto;
+    padding: 0;
     color: #666666;
     background: #fff;
-    border: 5px solid #666666;
-    outline: solid 15px #fff;
+    border: 4px solid #666666;
+    outline: solid 12px #fff;
 	outline-offset: 0;
     border-radius: 5px;
 }
@@ -138,13 +146,14 @@ hr::after {
     font-size: 1.2em;
     background: #666666;
     padding: 4px;
+    margin: 0;
     text-align: center;
     color: #FFF;
     font-weight: bold;
     letter-spacing: 0.05em;
 }
 .pop-up p {
-    padding: 16px 40px 20px;
+    padding: 16px 20px 20px;
     margin: 0;
     text-align: left;
 }
