@@ -40,7 +40,8 @@
     <p>
         1.1.1 - リリース<br>
         1.2.1 - UIを改善<br>
-        1.2.2 - 離脱時の処理追加
+        1.2.2 - 離脱時の処理追加<br>
+        1.2.3 - 命令追加
     </p>
 </div>
 <div class="pop-up unv" id="tos">
@@ -63,6 +64,21 @@
         <textarea cols="24" rows="8" id="txa" placeholder="こちらにあなたのご意見/ご感想/フィードバックをお書きください。「!?/:;&+=#」や半角スペース等の記号は用いることはできません。" style="text-align: left;"></textarea>
     </p>
 </div>
+<div class="pop-up unv" id="cdin">
+    <div class="title">&hearts; CLEAR LOG &hearts;</div>
+    <p>
+        <b style="color: red;">(注意) こちらのページは管理者専用です。</b><br>
+        たった今、管理者に6桁のパスコードを送信しました。<span id="limit">[Loading...]</span>秒以内にパスコードを入力し、エンターキーを押して下さい。
+        <div class="code-container">
+            <input type="number" class="code" placeholder="0" min="0" max="9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="9" required>
+        </div>
+    </p>
+</div>    
 <article>
     <div class="box"><div class="box-title">指令</div><span id="cmd">オナニーを始めましょう…</span></div>
     <button class="button" id="btn" onclick="Change()">始める…</button>
@@ -71,7 +87,7 @@
     <br>
 </article>
 <footer>
-    <div style="text-align: right; padding-right: 40px;">Version <span id="prv">1.2.1</span></div>
+    <div style="text-align: right; padding-right: 40px;"><button class="hbtn" onclick="resbtn()">Version <span id="prv">1.2.3</span></button></div>
 </footer>
 </body>
 </html>
